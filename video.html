@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="viewport" content="yes, width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 	<title>Hello, world!</title>
 	<!-- include three.js library -->
 	<script src='js/three.js'></script>
@@ -16,7 +16,7 @@
 
 <body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
 
-<video id="video" autoplay loop crossOrigin="anonymous" webkit-playsinline style="display:none">
+<video id="video" autoplay loop muted playsinline crossOrigin="anonymous" webkit-playsinline style="display:none">
 	
 	<source src="video/wemove.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 	<!--
@@ -42,6 +42,7 @@ var mesh1;
 
 initialize();
 animate();
+playVideo();
 
 function initialize()
 {
@@ -172,7 +173,7 @@ function playVideo(){
       });
 }
 
-playVideo();
+
 
 </script>
 
