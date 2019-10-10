@@ -160,6 +160,20 @@ function animate()
 	render();
 }
 
+function playVideo(){
+	let video = document.getElementById('video');
+	video.play();
+	var toggleSound = document.body.addEventListener('touchstart', function(){
+        if(video.muted === true){
+          video.muted=false;
+        } else if(video.muted === false){
+          video.muted=true;
+        }
+      });
+}
+
+playVideo();
+
 </script>
 
 </body>
